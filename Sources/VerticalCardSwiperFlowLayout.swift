@@ -181,7 +181,7 @@ internal class VerticalCardSwiperFlowLayout: UICollectionViewFlowLayout {
             let translationScale = CGFloat((attributes.zIndex + 1) * 10)
             var t = CGAffineTransform.identity
 
-            t = t.scaledBy(x: scale, y: 1)
+            t = t.scaledBy(x: scale, y: scale)
             if isPreviousCardVisible {
                 t = t.translatedBy(x: 0, y: (deltaY * translationScale))
             }
